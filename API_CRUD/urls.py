@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import *
+from .views import getArticles, getArticleDetail
 
 urlpatterns = [
-    path('', getArticles, name='getArticles'),
-    path('getArticleDetail/<str:articleId>/', getArticleDetail),
+    path('', getArticles),
+    path('getArticleDetail/<str:AId>/', getArticleDetail),
     
 ]
